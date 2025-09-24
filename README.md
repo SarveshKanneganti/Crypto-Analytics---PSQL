@@ -1,6 +1,6 @@
 📊 Crypto Analytics with PostgreSQL
 
-This project focuses on building a relational database for Crypto Analytics in PostgreSQL using three synthetic datasets: members, prices, and transactions. The database has been structured to reflect a simplified version of a real-world crypto trading platform, where members interact with market prices through recorded transactions.
+This project focuses on building a relational database for Crypto Analytics in PostgreSQL using three synthetic datasets: members, prices, and transactions.For this project, I leveraged the Faker library in Python to generate realistic synthetic data, simulating real-world records for analysis and testing.The database has been structured to reflect a simplified version of a real-world crypto trading platform, where members interact with market prices through recorded transactions.
 
 The members dataset contains information about users such as their unique IDs, names, and regions, forming the backbone of user-related analysis. The prices dataset provides historical cryptocurrency prices, records, including open, close, high, low, and volume for multiple crypto symbols across different dates. The transactions dataset links members with crypto activity by recording details such as transaction IDs, member IDs, symbols, transaction dates, quantities, and amounts. Together, these datasets create a connected framework that supports in-depth trading analytics.
 
