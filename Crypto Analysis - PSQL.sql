@@ -65,7 +65,7 @@ CREATE TABLE transactions (
   CONSTRAINT fk_tx_member FOREIGN KEY (member_id) REFERENCES members(member_id)
 );
 
----- Importing Excel files into analytics_cryptodb tables using pgadmin
+---- Importing Excel files into analytics_cryptodb tables using |copy in pgadmin
  \copy members(member_id,name,region) FROM 'C:\Users\sarve\Downloads\members_fresh.csv' DELIMITER ',' CSV HEAD
 ER;
 \copy prices(timestamp,ticker,open_price,high_price,low_price,close_price,volume) FROM 'C:\Users\sarve\Downlo
@@ -262,5 +262,6 @@ daily_price AS (
 )
 SELECT CORR(daily_qty, avg_close) AS corr_qty_price
 FROM daily_qty d JOIN daily_price p ON d.day = p.day;
+
 
 -- Thank You
